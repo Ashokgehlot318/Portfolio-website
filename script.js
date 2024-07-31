@@ -68,13 +68,18 @@ const typed = new Typed('.multiple-text',{
 // Initialize EmailJS with your User ID
 // emailjs.init("rvOEnxwZdJjLfJRMW");
 
+(function() {
+    emailjs.init({
+      publicKey: "rvOEnxwZdJjLfJRMW",
+    });
+})();
+
 var serviceId ="service_22ohywb";
 var templateId = "template_33z2jls";
 
 // Function to handle form submission
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector('form');
-    
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent default form submission
         
@@ -90,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         // Send email using EmailJS
-        emailjs.send('serviceId', 'templateId', emailData)
+        emailjs.send(serviceId, templateId, emailData)
             .then(response => {
                 console.log('Email sent successfully:', response);
                 alert('Thank you, '+ emailData['from_name']+'! Your message has been sent successfully!')
