@@ -528,6 +528,7 @@ span{
     }
     .home-image img{
         width: 70vw;
+        height: 65vh;
         margin-top: 4rem;
     }
 
@@ -537,6 +538,7 @@ span{
 
     .about-img img{
         width: 90vw;
+        height: 85vh;
         margin-top: 4rem;
     }
 
@@ -561,11 +563,13 @@ span{
 
     .home-image img{
         width: 80vw;
+        height: 58vh;
         margin-top: 8rem;
     }
 
     .about-img img{
         width: 100vw;
+        height: 70vh;
         margin-top: 4rem;
     }
 }
@@ -581,11 +585,13 @@ span{
 
     .home-image img {
         width: 80vw;
+        height: 45vh;
         margin-top: 8rem;
     }
 
     .about-img img {
         width: 100vw;
+        height: 60vh;
         margin-top: 4rem;
     }
 }
